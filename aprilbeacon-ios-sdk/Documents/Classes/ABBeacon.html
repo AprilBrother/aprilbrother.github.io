@@ -88,6 +88,10 @@
 	
 	<option value="//api/name/readBeaconProximityUUIDWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- readBeaconProximityUUIDWithCompletion:</option>
 	
+	<option value="//api/name/readBeaconTxPowerWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- readBeaconTxPowerWithCompletion:</option>
+	
+	<option value="//api/name/resetBeaconWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- resetBeaconWithCompletion:</option>
+	
 	<option value="//api/name/writeBeaconAdvInterval:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconAdvInterval:withCompletion:</option>
 	
 	<option value="//api/name/writeBeaconCommand:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconCommand:withCompletion:</option>
@@ -99,6 +103,8 @@
 	<option value="//api/name/writeBeaconMinor:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconMinor:withCompletion:</option>
 	
 	<option value="//api/name/writeBeaconPasscode:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconPasscode:withCompletion:</option>
+	
+	<option value="//api/name/writeBeaconPassword:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconPassword:withCompletion:</option>
 	
 	<option value="//api/name/writeBeaconProximityUUID:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconProximityUUID:withCompletion:</option>
 	
@@ -188,6 +194,10 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readBeaconProximityUUIDWithCompletion:">readBeaconProximityUUIDWithCompletion:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readBeaconTxPowerWithCompletion:">readBeaconTxPowerWithCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetBeaconWithCompletion:">resetBeaconWithCompletion:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconAdvInterval:withCompletion:">writeBeaconAdvInterval:withCompletion:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconCommand:withCompletion:">writeBeaconCommand:withCompletion:</a></span></li>
@@ -199,6 +209,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconMinor:withCompletion:">writeBeaconMinor:withCompletion:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconPasscode:withCompletion:">writeBeaconPasscode:withCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconPassword:withCompletion:">writeBeaconPassword:withCompletion:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconProximityUUID:withCompletion:">writeBeaconProximityUUID:withCompletion:</a></span></li>
 	
@@ -230,8 +242,11 @@
 	<td class="specification-title">Inherits from</td>
 	<td class="specification-value">NSObject</td>
 </tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCopying</td>
+</tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ABBeacon.h<br />ABBeacon.m</td>
+	<td class="specification-value">ABBeacon.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -401,6 +416,12 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/readBeaconTxPowerWithCompletion:">&ndash;&nbsp;readBeaconTxPowerWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/readBeaconBatteryWithCompletion:">&ndash;&nbsp;readBeaconBatteryWithCompletion:</a></code>
 	</span>
 	
@@ -414,6 +435,18 @@
 
 						<ul class="task-list">
 							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeBeaconPassword:withCompletion:">&ndash;&nbsp;writeBeaconPassword:withCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetBeaconWithCompletion:">&ndash;&nbsp;resetBeaconWithCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeBeaconProximityUUID:withCompletion:">&ndash;&nbsp;writeBeaconProximityUUID:withCompletion:</a></code>
 	</span>
@@ -1548,6 +1581,120 @@ required)</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/readBeaconTxPowerWithCompletion:" title="readBeaconTxPowerWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">readBeaconTxPowerWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Read Tx power of connected beacon (Previous connection
+required)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)readBeaconTxPowerWithCompletion:(ABPowerCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>block with power value as param</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p><a href="../Constants/ABTxPower.html">ABTxPower</a> of beacon Tx power</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Read Tx power of connected beacon (Previous connection
+required)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetBeaconWithCompletion:" title="resetBeaconWithCompletion:"></a>
+	<h3 class="subsubtitle method-title">resetBeaconWithCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reset connected beacon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resetBeaconWithCompletion:(ABCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>block handling operation completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Reset connected beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/writeBeaconAdvInterval:withCompletion:" title="writeBeaconAdvInterval:withCompletion:"></a>
 	<h3 class="subsubtitle method-title">writeBeaconAdvInterval:withCompletion:</h3>
 	
@@ -1914,6 +2061,67 @@ required)</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/writeBeaconPassword:withCompletion:" title="writeBeaconPassword:withCompletion:"></a>
+	<h3 class="subsubtitle method-title">writeBeaconPassword:withCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>check password of connected beacon before write values</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeBeaconPassword:(NSString *)<em>password</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>password of beacon</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>block handling operation completion</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>check password of connected beacon before write values</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/writeBeaconProximityUUID:withCompletion:" title="writeBeaconProximityUUID:withCompletion:"></a>
 	<h3 class="subsubtitle method-title">writeBeaconProximityUUID:withCompletion:</h3>
 	
@@ -2050,7 +2258,7 @@ required)</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 AprilBrother. All rights reserved. (Last updated: 2014-05-07)</span><br />
+						<p><span class="copyright">&copy; 2014 AprilBrother. All rights reserved. (Last updated: 2014-05-09)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

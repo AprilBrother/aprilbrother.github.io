@@ -99,7 +99,27 @@
 <br>
 <pre>public class <span class="strong">BeaconManager</span>
 extends java.lang.Object</pre>
+<<<<<<< HEAD
 <div class="block">beacon管理器 对beacon进行管理操作 可以开启及关闭beacon搜索 检测beacon等 使用前需在AndroidManifest中配置 在application节点中配置 具体请参照demo中配置</div>
+=======
+<div class="block">beacon管理器  对beacon进行管理操作 可以开启及关闭beacon搜索 检测beacon等
+ 使用前需在AndroidManifest中配置
+ 
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+   
+   <uses-feature
+      android:name="android.hardware.bluetooth_le"
+       android:required="true" />
+ 
+ 在application节点中配置
+ <service
+           android:name="com.aprilbrother.aprilbrothersdk.service.BeaconService"
+           android:exported="false" />
+           
+具体请参照demo中配置</div>
+
+>>>>>>> 780e4ab922f8b89e3c2bba0f981990627880fe18
 </li>
 </ul>
 </div>

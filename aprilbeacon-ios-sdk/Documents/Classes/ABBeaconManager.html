@@ -48,6 +48,10 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/addCustomBeaconNameFilter:">&nbsp;&nbsp;&nbsp;&nbsp;- addCustomBeaconNameFilter:</option>
+	
+	<option value="//api/name/removeCustomBeaconNameFilter:">&nbsp;&nbsp;&nbsp;&nbsp;- removeCustomBeaconNameFilter:</option>
+	
 	<option value="//api/name/requestStateForRegion:">&nbsp;&nbsp;&nbsp;&nbsp;- requestStateForRegion:</option>
 	
 	<option value="//api/name/startAdvertisingWithProximityUUID:major:minor:identifier:">&nbsp;&nbsp;&nbsp;&nbsp;- startAdvertisingWithProximityUUID:major:minor:identifier:</option>
@@ -107,6 +111,10 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCustomBeaconNameFilter:">addCustomBeaconNameFilter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeCustomBeaconNameFilter:">removeCustomBeaconNameFilter:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestStateForRegion:">requestStateForRegion:</a></span></li>
 	
@@ -279,6 +287,18 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCustomBeaconNameFilter:">&ndash;&nbsp;addCustomBeaconNameFilter:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeCustomBeaconNameFilter:">&ndash;&nbsp;removeCustomBeaconNameFilter:</a></code>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -342,6 +362,118 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addCustomBeaconNameFilter:" title="addCustomBeaconNameFilter:"></a>
+	<h3 class="subsubtitle method-title">addCustomBeaconNameFilter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Beacons whose name begin with specified name can be found.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addCustomBeaconNameFilter:(NSString *)<em>beaconPrefixName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beaconPrefixName</em></dt>
+			<dd><p>name want to discovered</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Beacons whose name begin with specified name can be found.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeCustomBeaconNameFilter:" title="removeCustomBeaconNameFilter:"></a>
+	<h3 class="subsubtitle method-title">removeCustomBeaconNameFilter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove filter of specified name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeCustomBeaconNameFilter:(NSString *)<em>beaconPrefixName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>beaconPrefixName</em></dt>
+			<dd><p>name want to removed from filter;</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Remove filter of specified name.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBeaconManager.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/requestStateForRegion:" title="requestStateForRegion:"></a>
@@ -917,7 +1049,7 @@ April beacon region.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 AprilBrother. All rights reserved. (Last updated: 2014-07-03)</span><br />
+						<p><span class="copyright">&copy; 2014 AprilBrother. All rights reserved. (Last updated: 2014-07-22)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

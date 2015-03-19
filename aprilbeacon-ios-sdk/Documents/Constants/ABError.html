@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>ABTxPower Constants Reference</title>
+		<title>ABError Constants Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">ABTxPower Constants Reference</h1>
+				<h1 class="hideInXcode">ABError Constants Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -45,7 +45,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="ABTxPower Constants Reference" name="top"></a>
+				<a title="ABError Constants Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -54,7 +54,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">ABTxPower Constants Reference</h1>
+						<h1 class="title title-header">ABError Constants Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -62,7 +62,7 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ABBeacon.h</td>
+	<td class="specification-value">ABError.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -74,11 +74,11 @@
 					
                     
                     
-                    <h3 class="subsubtitle method-title">ABTxPower</h3>
+                    <h3 class="subsubtitle method-title">ABError</h3>
                     
 					
 					<div class="section section-overview">
-                        <p>April Beacon power value definition</p>
+                        <p>April Beacon Error Definition</p>
 					</div>
 					
 					
@@ -86,15 +86,13 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSInteger, ABTxPower ) {<br/>
+                        <code>typedef NS_ENUM(NSInteger, ABError ) {<br/>
                             
-                            &nbsp;&nbsp; <a href="">ABTxPower0DBM</a> = 0,<br/>
+                            &nbsp;&nbsp; <a href="">ABErrorUnknown</a> = 0,<br/>
                             
-                            &nbsp;&nbsp; <a href="">ABTxPower4DBM</a> = 1,<br/>
+                            &nbsp;&nbsp; <a href="">ABErrorInvalidParameters</a> = 1,<br/>
                             
-                            &nbsp;&nbsp; <a href="">ABTxPowerMinus6DBM</a> = 2,<br/>
-                            
-                            &nbsp;&nbsp; <a href="">ABTxPowerMinus23DBM</a> = 3,<br/>
+                            &nbsp;&nbsp; <a href="">ABErrorNotConnected</a> = 2,<br/>
                             
                             };</code>
                     
@@ -104,11 +102,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="ABTxPower0DBM"></a><code>ABTxPower0DBM</code></dt>
+                            <dt><a name="" title="ABErrorUnknown"></a><code>ABErrorUnknown</code></dt>
 <dd>
 
 
-<p>Default value for tx power</p>
+<p>Unknown error</p>
 
     
 
@@ -116,16 +114,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">ABBeacon.h</code>.
+		Declared In <code class="declared-in-ref">ABError.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="ABTxPower4DBM"></a><code>ABTxPower4DBM</code></dt>
+                            <dt><a name="" title="ABErrorInvalidParameters"></a><code>ABErrorInvalidParameters</code></dt>
 <dd>
 
 
-<p>The max value for tx power</p>
+<p>Value of parameter is not valid</p>
 
     
 
@@ -133,16 +131,16 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">ABBeacon.h</code>.
+		Declared In <code class="declared-in-ref">ABError.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="ABTxPowerMinus6DBM"></a><code>ABTxPowerMinus6DBM</code></dt>
+                            <dt><a name="" title="ABErrorNotConnected"></a><code>ABErrorNotConnected</code></dt>
 <dd>
 
 
-<p>Small value for tx power</p>
+<p>Can&rsquo;t write data when Beacon is not connected</p>
 
     
 
@@ -150,24 +148,7 @@
 
     
 	<p>
-		Declared In <code class="declared-in-ref">ABBeacon.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="ABTxPowerMinus23DBM"></a><code>ABTxPowerMinus23DBM</code></dt>
-<dd>
-
-
-<p>The min value for tx power</p>
-
-    
-
-    
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">ABBeacon.h</code>.
+		Declared In <code class="declared-in-ref">ABError.h</code>.
 	</p>
 	
 </dd>
@@ -184,7 +165,7 @@
                     
                     <div class="method-subsection declared-in-section">
                         <h4 class="method-subtitle">Declared In</h4>
-                        <code class="declared-in-ref">ABBeacon.h</code><br />
+                        <code class="declared-in-ref">ABError.h</code><br />
                     </div>				
                     
                     

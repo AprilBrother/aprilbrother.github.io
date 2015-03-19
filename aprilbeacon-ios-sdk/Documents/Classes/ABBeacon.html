@@ -82,6 +82,8 @@
 	
 	<option value="//api/name/disconnectBeacon">&nbsp;&nbsp;&nbsp;&nbsp;- disconnectBeacon</option>
 	
+	<option value="//api/name/hexRepresentationWithSpacesAS:data:">&nbsp;&nbsp;&nbsp;&nbsp;- hexRepresentationWithSpacesAS:data:</option>
+	
 	<option value="//api/name/readBeaconAdvIntervalWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- readBeaconAdvIntervalWithCompletion:</option>
 	
 	<option value="//api/name/readBeaconBatteryWithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- readBeaconBatteryWithCompletion:</option>
@@ -103,6 +105,8 @@
 	<option value="//api/name/writeBeaconAdvInterval:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconAdvInterval:withCompletion:</option>
 	
 	<option value="//api/name/writeBeaconCommand:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconCommand:withCompletion:</option>
+	
+	<option value="//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:</option>
 	
 	<option value="//api/name/writeBeaconMajor:withCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- writeBeaconMajor:withCompletion:</option>
 	
@@ -194,6 +198,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disconnectBeacon">disconnectBeacon</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hexRepresentationWithSpacesAS:data:">hexRepresentationWithSpacesAS:data:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readBeaconAdvIntervalWithCompletion:">readBeaconAdvIntervalWithCompletion:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readBeaconBatteryWithCompletion:">readBeaconBatteryWithCompletion:</a></span></li>
@@ -215,6 +221,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconAdvInterval:withCompletion:">writeBeaconAdvInterval:withCompletion:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconCommand:withCompletion:">writeBeaconCommand:withCompletion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:">writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/writeBeaconMajor:withCompletion:">writeBeaconMajor:withCompletion:</a></span></li>
 	
@@ -258,7 +266,7 @@
 	<td class="specification-value">NSCopying</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ABBeacon.h</td>
+	<td class="specification-value">ABBeacon.h<br />ABBeacon.m</td>
 </tr>
 						</tbody></table></div>
 					
@@ -521,6 +529,26 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/writeBeaconTxPower:withCompletion:">&ndash;&nbsp;writeBeaconTxPower:withCompletion:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:">&ndash;&nbsp;writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hexRepresentationWithSpacesAS:data:">&ndash;&nbsp;hexRepresentationWithSpacesAS:data:</a></code>
 	</span>
 	
 	
@@ -1244,7 +1272,7 @@ This value is an average of the RSSI samples collected since this beacon was las
 	
 	
 	<div class="method-subsection brief-description">
-		<p>check password of connected beacon before write values.
+		<p>check password of <a href="#//api/name/connected">connected</a> beacon before write values.
 new method for writeBeaconPassword</p>
 	</div>		
 	
@@ -1282,7 +1310,7 @@ new method for writeBeaconPassword</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>check password of connected beacon before write values.
+		<p>check password of <a href="#//api/name/connected">connected</a> beacon before write values.
 new method for writeBeaconPassword</p>
 	</div>
 	
@@ -1397,13 +1425,74 @@ Major, Minor, Power and Advertising interval.</p>
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/hexRepresentationWithSpacesAS:data:" title="hexRepresentationWithSpacesAS:data:"></a>
+	<h3 class="subsubtitle method-title">hexRepresentationWithSpacesAS:data:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>change NSdata to hex string</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)hexRepresentationWithSpacesAS:(BOOL)<em>spaces</em> data:(NSData *)<em>data</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spaces</em></dt>
+			<dd><p>should seperate   with space</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>data</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>hex String</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>change NSdata to hex string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBeacon.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/readBeaconAdvIntervalWithCompletion:" title="readBeaconAdvIntervalWithCompletion:"></a>
 	<h3 class="subsubtitle method-title">readBeaconAdvIntervalWithCompletion:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Read advertising interval of connected beacon (Previous connection
+		<p>Read advertising interval of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>		
 	
@@ -1436,7 +1525,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Read advertising interval of connected beacon (Previous connection
+		<p>Read advertising interval of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>
 	
@@ -1461,7 +1550,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Read battery level of connected beacon (Previous connection
+		<p>Read battery level of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>		
 	
@@ -1494,7 +1583,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Read battery level of connected beacon (Previous connection
+		<p>Read battery level of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>
 	
@@ -1519,7 +1608,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Read <a href="#//api/name/macAddress">macAddress</a> of connected beacon (Previous connection
+		<p>Read <a href="#//api/name/macAddress">macAddress</a> of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>		
 	
@@ -1552,7 +1641,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Read <a href="#//api/name/macAddress">macAddress</a> of connected beacon (Previous connection
+		<p>Read <a href="#//api/name/macAddress">macAddress</a> of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>
 	
@@ -1577,7 +1666,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Read <a href="#//api/name/major">major</a> of connected beacon (Previous connection
+		<p>Read <a href="#//api/name/major">major</a> of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>		
 	
@@ -1610,7 +1699,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Read <a href="#//api/name/major">major</a> of connected beacon (Previous connection
+		<p>Read <a href="#//api/name/major">major</a> of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>
 	
@@ -1635,7 +1724,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Read power of connected beacon (Previous connection
+		<p>Read power of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>		
 	
@@ -1668,7 +1757,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Read power of connected beacon (Previous connection
+		<p>Read power of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>
 	
@@ -1693,7 +1782,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Read <a href="#//api/name/minor">minor</a> of connected beacon (Previous connection
+		<p>Read <a href="#//api/name/minor">minor</a> of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>		
 	
@@ -1726,7 +1815,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Read <a href="#//api/name/minor">minor</a> of connected beacon (Previous connection
+		<p>Read <a href="#//api/name/minor">minor</a> of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>
 	
@@ -1751,7 +1840,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Read Proximity UUID of connected beacon (Previous connection
+		<p>Read Proximity UUID of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>		
 	
@@ -1784,7 +1873,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Read Proximity UUID of connected beacon (Previous connection
+		<p>Read Proximity UUID of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>
 	
@@ -1809,7 +1898,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Read Tx power of connected beacon (Previous connection
+		<p>Read Tx power of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>		
 	
@@ -1842,7 +1931,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Read Tx power of connected beacon (Previous connection
+		<p>Read Tx power of <a href="#//api/name/connected">connected</a> beacon (Previous connection
 required)</p>
 	</div>
 	
@@ -1867,7 +1956,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Reset connected beacon.</p>
+		<p>Reset <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>		
 	
     
@@ -1899,7 +1988,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Reset connected beacon.</p>
+		<p>Reset <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>
 	
 	
@@ -1923,7 +2012,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes advertising interval (in milisec) of connected beacon.</p>
+		<p>Writes advertising interval (in milisec) of <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>		
 	
     
@@ -1960,7 +2049,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Writes advertising interval (in milisec) of connected beacon.</p>
+		<p>Writes advertising interval (in milisec) of <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>
 	
 	
@@ -1984,7 +2073,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes command to connected beacon.</p>
+		<p>Writes command to <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>		
 	
     
@@ -2021,7 +2110,112 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Writes command to connected beacon.</p>
+		<p>Writes command to <a href="#//api/name/connected">connected</a> beacon.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBeacon.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:" title="writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:"></a>
+	<h3 class="subsubtitle method-title">writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Writes beacon info to <a href="#//api/name/connected">connected</a> beacon
+If you set the password to nil, it will use the default password
+If you set value to nil, it won&rsquo;t modify the value</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)writeBeaconInfoByPassword:(NSString *)<em>password</em> uuid:(NSString *)<em>uuidString</em> major:(NSNumber *)<em>major</em> minor:(NSNumber *)<em>minor</em> txPower:(NSNumber *)<em>txPower</em> advInterval:(NSNumber *)<em>advInterval</em> measuredPower:(NSNumber *)<em>measuredPower</em> newpassword:(NSString *)<em>newpassword</em> autoRestart:(BOOL)<em>autoRestart</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>auth password, default &lsquo;AprilBrother&rsquo;</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>uuidString</em></dt>
+			<dd><p>new Proximity UUID value</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>major</em></dt>
+			<dd><p>new <a href="#//api/name/major">major</a> of iBeacon</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minor</em></dt>
+			<dd><p>new minro of iBeacon</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>txPower</em></dt>
+			<dd><p>@(<a href="../Constants/ABTxPower.html">ABTxPower</a>) tx power</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>advInterval</em></dt>
+			<dd><p>advertise interval</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>measuredPower</em></dt>
+			<dd><p>measured power of iBeacon</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newpassword</em></dt>
+			<dd><p>new password</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>autoRestart</em></dt>
+			<dd><p>Default YES</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>completion</em></dt>
+			<dd><p>callback</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Writes beacon info to <a href="#//api/name/connected">connected</a> beacon
+If you set the password to nil, it will use the default password
+If you set value to nil, it won&rsquo;t modify the value</p>
 	</div>
 	
 	
@@ -2045,7 +2239,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes <a href="#//api/name/major">major</a> param to bluetooth connected beacon.</p>
+		<p>Writes <a href="#//api/name/major">major</a> param to bluetooth <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>		
 	
     
@@ -2082,7 +2276,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Writes <a href="#//api/name/major">major</a> param to bluetooth connected beacon.</p>
+		<p>Writes <a href="#//api/name/major">major</a> param to bluetooth <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>
 	
 	
@@ -2106,7 +2300,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes power to connected beacon.</p>
+		<p>Writes power to <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>		
 	
     
@@ -2143,7 +2337,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Writes power to connected beacon.</p>
+		<p>Writes power to <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>
 	
 	
@@ -2167,7 +2361,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes <a href="#//api/name/minor">minor</a> param to bluetooth connected beacon.</p>
+		<p>Writes <a href="#//api/name/minor">minor</a> param to bluetooth <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>		
 	
     
@@ -2204,7 +2398,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Writes <a href="#//api/name/minor">minor</a> param to bluetooth connected beacon.</p>
+		<p>Writes <a href="#//api/name/minor">minor</a> param to bluetooth <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>
 	
 	
@@ -2228,7 +2422,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes passcode to connected beacon.</p>
+		<p>Writes passcode to <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>		
 	
     
@@ -2265,7 +2459,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Writes passcode to connected beacon.</p>
+		<p>Writes passcode to <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>
 	
 	
@@ -2289,7 +2483,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes Proximity UUID param to bluetooth connected beacon. Please  remember that If you change the UUID to your very own value anyone can read it, copy it and spoof your beacons. So if you are working on a mission critical application where security is an issue - be sure to implement it on your end. We are also working on a secure mode for our beacons and it will be included in one of the next firmware updates.</p>
+		<p>Writes Proximity UUID param to bluetooth <a href="#//api/name/connected">connected</a> beacon. Please  remember that If you change the UUID to your very own value anyone can read it, copy it and spoof your beacons. So if you are working on a mission critical application where security is an issue - be sure to implement it on your end. We are also working on a secure mode for our beacons and it will be included in one of the next firmware updates.</p>
 	</div>		
 	
     
@@ -2326,7 +2520,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Writes Proximity UUID param to bluetooth connected beacon. Please  remember that If you change the UUID to your very own value anyone can read it, copy it and spoof your beacons. So if you are working on a mission critical application where security is an issue - be sure to implement it on your end. We are also working on a secure mode for our beacons and it will be included in one of the next firmware updates.</p>
+		<p>Writes Proximity UUID param to bluetooth <a href="#//api/name/connected">connected</a> beacon. Please  remember that If you change the UUID to your very own value anyone can read it, copy it and spoof your beacons. So if you are working on a mission critical application where security is an issue - be sure to implement it on your end. We are also working on a secure mode for our beacons and it will be included in one of the next firmware updates.</p>
 	</div>
 	
 	
@@ -2350,7 +2544,7 @@ required)</p>
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Writes power of bluetooth connected beacon.</p>
+		<p>Writes power of bluetooth <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>		
 	
     
@@ -2387,7 +2581,7 @@ required)</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Writes power of bluetooth connected beacon.</p>
+		<p>Writes power of bluetooth <a href="#//api/name/connected">connected</a> beacon.</p>
 	</div>
 	
 	
@@ -2419,7 +2613,7 @@ required)</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 AprilBrother. All rights reserved. (Last updated: 2014-09-10)</span><br />
+						<p><span class="copyright">&copy; 2015 AprilBrother. All rights reserved. (Last updated: 2015-03-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

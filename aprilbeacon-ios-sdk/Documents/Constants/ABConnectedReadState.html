@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>ABError Constants Reference</title>
+	<title>ABConnectedReadState Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,13 +59,13 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">ABError Constants Reference</h1>
+					<h1 class="title">ABConnectedReadState Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<th>Declared in</th>
-	<td>ABError.h</td>
+	<td>ABBeacon.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -75,25 +75,21 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">ABError</h3>
+                    <h3 class="subsubtitle method-title">ABConnectedReadState</h3>
                     
-					
-					<div class="section section-overview">
-                        <p>April Beacon Error Definition</p>
-					</div>
-					
-					
                     <div class="section">
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSInteger, ABError ) {<br>
+                        <code>typedef NS_ENUM(NSInteger, ABConnectedReadState ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">ABErrorUnknown</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">ABConnectedReadStatedAllInfo</a> = 1 &lt; &lt; 0,<br>
                             
-                            &nbsp;&nbsp; <a href="">ABErrorInvalidParameters</a> = 1,<br>
+                            &nbsp;&nbsp; <a href="">ABConnectedReadStatedbeaconService</a> = 1 &lt; &lt; 1,<br>
                             
-                            &nbsp;&nbsp; <a href="">ABErrorNotConnected</a> = 2,<br>
+                            &nbsp;&nbsp; <a href="">ABConnectedReadStatedInformationUUID</a> = 1 &lt; &lt; 2,<br>
+                            
+                            &nbsp;&nbsp; <a href="">ABConnectedReadStatedBatteryUUID</a> = 1 &lt; &lt; 3,<br>
                             
                             };</code>
                     
@@ -103,53 +99,42 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="ABErrorUnknown"></a><code>ABErrorUnknown</code></dt>
+                            <dt><a name="" title="ABConnectedReadStatedAllInfo"></a><code>ABConnectedReadStatedAllInfo</code></dt>
 <dd>
-
-
-<p>Unknown error</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">ABError.h</code>.
+		Declared In <code class="declared-in-ref">ABBeacon.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="ABErrorInvalidParameters"></a><code>ABErrorInvalidParameters</code></dt>
+                            <dt><a name="" title="ABConnectedReadStatedbeaconService"></a><code>ABConnectedReadStatedbeaconService</code></dt>
 <dd>
-
-
-<p>Value of parameter is not valid</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">ABError.h</code>.
+		Declared In <code class="declared-in-ref">ABBeacon.h</code>.
 	</p>
 	
 </dd>
                             
-                            <dt><a name="" title="ABErrorNotConnected"></a><code>ABErrorNotConnected</code></dt>
+                            <dt><a name="" title="ABConnectedReadStatedInformationUUID"></a><code>ABConnectedReadStatedInformationUUID</code></dt>
 <dd>
-
-
-<p>Can&rsquo;t write data when Beacon is not connected</p>
-
-
-
-
 
     
 	<p>
-		Declared In <code class="declared-in-ref">ABError.h</code>.
+		Declared In <code class="declared-in-ref">ABBeacon.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="ABConnectedReadStatedBatteryUUID"></a><code>ABConnectedReadStatedBatteryUUID</code></dt>
+<dd>
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">ABBeacon.h</code>.
 	</p>
 	
 </dd>
@@ -158,17 +143,6 @@
                     </div>
                     
 
-                    
-                    
-
-                    
-
-                    
-                    <div class="method-subsection declared-in-section">
-                        <h4 class="method-subtitle">Declared In</h4>
-                        <p><code class="declared-in-ref">ABError.h</code></p>
-                    </div>
-                    
                     
                     
 				</main>

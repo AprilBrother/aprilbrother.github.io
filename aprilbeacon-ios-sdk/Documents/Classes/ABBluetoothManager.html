@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>ABSensor Class Reference</title>
+		<title>ABBluetoothManager Class Reference</title>
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
@@ -16,7 +16,7 @@
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">ABSensor Class Reference</h1>
+				<h1 class="hideInXcode">ABBluetoothManager Class Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -43,13 +43,19 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/setAccValueChangedBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setAccValueChangedBlock:</option>
+	<option value="//api/name/addCustomBeaconNameFilter:">&nbsp;&nbsp;&nbsp;&nbsp;- addCustomBeaconNameFilter:</option>
 	
-	<option value="//api/name/setAccelerometerOn:WithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- setAccelerometerOn:WithCompletion:</option>
+	<option value="//api/name/removeCustomBeaconNameFilter:">&nbsp;&nbsp;&nbsp;&nbsp;- removeCustomBeaconNameFilter:</option>
 	
-	<option value="//api/name/setLightSensorOn:WithCompletion:">&nbsp;&nbsp;&nbsp;&nbsp;- setLightSensorOn:WithCompletion:</option>
+	<option value="//api/name/startAprilBeaconsDiscovery">&nbsp;&nbsp;&nbsp;&nbsp;- startAprilBeaconsDiscovery</option>
 	
-	<option value="//api/name/setLightValueChangedBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setLightValueChangedBlock:</option>
+	<option value="//api/name/startAprilLightDiscovery">&nbsp;&nbsp;&nbsp;&nbsp;- startAprilLightDiscovery</option>
+	
+	<option value="//api/name/startAprilSensorsDiscovery">&nbsp;&nbsp;&nbsp;&nbsp;- startAprilSensorsDiscovery</option>
+	
+	<option value="//api/name/stopAndClearDataAprilBeaconDiscovery">&nbsp;&nbsp;&nbsp;&nbsp;- stopAndClearDataAprilBeaconDiscovery</option>
+	
+	<option value="//api/name/stopAprilBeaconDiscovery">&nbsp;&nbsp;&nbsp;&nbsp;- stopAprilBeaconDiscovery</option>
 	
 	
 	
@@ -79,13 +85,19 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAccValueChangedBlock:">setAccValueChangedBlock:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCustomBeaconNameFilter:">addCustomBeaconNameFilter:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAccelerometerOn:WithCompletion:">setAccelerometerOn:WithCompletion:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeCustomBeaconNameFilter:">removeCustomBeaconNameFilter:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLightSensorOn:WithCompletion:">setLightSensorOn:WithCompletion:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startAprilBeaconsDiscovery">startAprilBeaconsDiscovery</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLightValueChangedBlock:">setLightValueChangedBlock:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startAprilLightDiscovery">startAprilLightDiscovery</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startAprilSensorsDiscovery">startAprilSensorsDiscovery</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAndClearDataAprilBeaconDiscovery">stopAndClearDataAprilBeaconDiscovery</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAprilBeaconDiscovery">stopAprilBeaconDiscovery</a></span></li>
 	
 </ul></li>
 
@@ -94,7 +106,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="ABSensor Class Reference" name="top"></a>
+				<a title="ABBluetoothManager Class Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -103,7 +115,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">ABSensor Class Reference</h1>
+						<h1 class="title title-header">ABBluetoothManager Class Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
@@ -111,10 +123,10 @@
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
 	<td class="specification-title">Inherits from</td>
-	<td class="specification-value"><a href="../Classes/ABBeacon.html">ABBeacon</a> : NSObject</td>
+	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ABSensor.h</td>
+	<td class="specification-value">ABBluetoothManager.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -124,7 +136,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Light value callback method.</p>
+						<p>ABBluetoothManager defines method to discover April beacons</p>
 					</div>
 					
 					
@@ -142,25 +154,43 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setAccelerometerOn:WithCompletion:">&ndash;&nbsp;setAccelerometerOn:WithCompletion:</a></code>
+		<code><a href="#//api/name/startAprilBeaconsDiscovery">&ndash;&nbsp;startAprilBeaconsDiscovery</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setLightSensorOn:WithCompletion:">&ndash;&nbsp;setLightSensorOn:WithCompletion:</a></code>
+		<code><a href="#//api/name/startAprilSensorsDiscovery">&ndash;&nbsp;startAprilSensorsDiscovery</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setAccValueChangedBlock:">&ndash;&nbsp;setAccValueChangedBlock:</a></code>
+		<code><a href="#//api/name/startAprilLightDiscovery">&ndash;&nbsp;startAprilLightDiscovery</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/setLightValueChangedBlock:">&ndash;&nbsp;setLightValueChangedBlock:</a></code>
+		<code><a href="#//api/name/stopAprilBeaconDiscovery">&ndash;&nbsp;stopAprilBeaconDiscovery</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopAndClearDataAprilBeaconDiscovery">&ndash;&nbsp;stopAndClearDataAprilBeaconDiscovery</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCustomBeaconNameFilter:">&ndash;&nbsp;addCustomBeaconNameFilter:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeCustomBeaconNameFilter:">&ndash;&nbsp;removeCustomBeaconNameFilter:</a></code>
 	</span>
 	
 	
@@ -182,18 +212,18 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/setAccValueChangedBlock:" title="setAccValueChangedBlock:"></a>
-	<h3 class="subsubtitle method-title">setAccValueChangedBlock:</h3>
+	<a name="//api/name/addCustomBeaconNameFilter:" title="addCustomBeaconNameFilter:"></a>
+	<h3 class="subsubtitle method-title">addCustomBeaconNameFilter:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Set block to receive acc value changed</p>
+		<p>Beacons whose name begin with specified name can be found.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setAccValueChangedBlock:(ABAccValueChangedBlock)<em>block</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)addCustomBeaconNameFilter:(NSString *)<em>beaconPrefixName</em></code></div>
 
     
 	
@@ -201,8 +231,8 @@
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>block</em></dt>
-			<dd><p>the block to callback when value changed</p></dd>
+			<dt><em>beaconPrefixName</em></dt>
+			<dd><p>name want to discovered</p></dd>
 		</dl>
 		
 	</div>
@@ -220,7 +250,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set block to receive acc value changed</p>
+		<p>Beacons whose name begin with specified name can be found.</p>
 	</div>
 	
 	
@@ -231,26 +261,25 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABSensor.h</code><br />
+		<code class="declared-in-ref">ABBluetoothManager.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setAccelerometerOn:WithCompletion:" title="setAccelerometerOn:WithCompletion:"></a>
-	<h3 class="subsubtitle method-title">setAccelerometerOn:WithCompletion:</h3>
+	<a name="//api/name/removeCustomBeaconNameFilter:" title="removeCustomBeaconNameFilter:"></a>
+	<h3 class="subsubtitle method-title">removeCustomBeaconNameFilter:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Turn on/off accelerometer.
-Accelerometer is on default</p>
+		<p>Remove filter of specified name.</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setAccelerometerOn:(BOOL)<em>on</em> WithCompletion:(ABCompletionBlock)<em>completion</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)removeCustomBeaconNameFilter:(NSString *)<em>beaconPrefixName</em></code></div>
 
     
 	
@@ -258,13 +287,8 @@ Accelerometer is on default</p>
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>on</em></dt>
-			<dd><p>status of accelerometer</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>completion</em></dt>
-			<dd><p>block handling operation completion</p></dd>
+			<dt><em>beaconPrefixName</em></dt>
+			<dd><p>name want to removed from filter;</p></dd>
 		</dl>
 		
 	</div>
@@ -282,8 +306,7 @@ Accelerometer is on default</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Turn on/off accelerometer.
-Accelerometer is on default</p>
+		<p>Remove filter of specified name.</p>
 	</div>
 	
 	
@@ -294,43 +317,28 @@ Accelerometer is on default</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABSensor.h</code><br />
+		<code class="declared-in-ref">ABBluetoothManager.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setLightSensorOn:WithCompletion:" title="setLightSensorOn:WithCompletion:"></a>
-	<h3 class="subsubtitle method-title">setLightSensorOn:WithCompletion:</h3>
+	<a name="//api/name/startAprilBeaconsDiscovery" title="startAprilBeaconsDiscovery"></a>
+	<h3 class="subsubtitle method-title">startAprilBeaconsDiscovery</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Turn on/off light sensor.
-Light sensor is on default</p>
+		<p>Start beacon discovery process based on CoreBluetooth
+framework. Method is useful for finding all April beacons</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setLightSensorOn:(BOOL)<em>on</em> WithCompletion:(ABCompletionBlock)<em>completion</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)startAprilBeaconsDiscovery</code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>on</em></dt>
-			<dd><p>status of light sensor</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>completion</em></dt>
-			<dd><p>block handling operation completion</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
@@ -345,8 +353,8 @@ Light sensor is on default</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Turn on/off light sensor.
-Light sensor is on default</p>
+		<p>Start beacon discovery process based on CoreBluetooth
+framework. Method is useful for finding all April beacons</p>
 	</div>
 	
 	
@@ -357,37 +365,28 @@ Light sensor is on default</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABSensor.h</code><br />
+		<code class="declared-in-ref">ABBluetoothManager.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/setLightValueChangedBlock:" title="setLightValueChangedBlock:"></a>
-	<h3 class="subsubtitle method-title">setLightValueChangedBlock:</h3>
+	<a name="//api/name/startAprilLightDiscovery" title="startAprilLightDiscovery"></a>
+	<h3 class="subsubtitle method-title">startAprilLightDiscovery</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Set block to receive light value changed</p>
+		<p>Start light discovery process based on CoreBluetooth
+framework. Method is useful for finding april light only</p>
 	</div>		
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (void)setLightValueChangedBlock:(ABLightValueChangedBlock)<em>block</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)startAprilLightDiscovery</code></div>
 
     
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>block</em></dt>
-			<dd><p>the block to callback when value changed</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
@@ -402,7 +401,8 @@ Light sensor is on default</p>
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>Set block to receive light value changed</p>
+		<p>Start light discovery process based on CoreBluetooth
+framework. Method is useful for finding april light only</p>
 	</div>
 	
 	
@@ -413,7 +413,142 @@ Light sensor is on default</p>
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABSensor.h</code><br />
+		<code class="declared-in-ref">ABBluetoothManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startAprilSensorsDiscovery" title="startAprilSensorsDiscovery"></a>
+	<h3 class="subsubtitle method-title">startAprilSensorsDiscovery</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start sensor discovery process based on CoreBluetooth
+framework. Method is useful for finding april sensors only</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startAprilSensorsDiscovery</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Start sensor discovery process based on CoreBluetooth
+framework. Method is useful for finding april sensors only</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBluetoothManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopAndClearDataAprilBeaconDiscovery" title="stopAndClearDataAprilBeaconDiscovery"></a>
+	<h3 class="subsubtitle method-title">stopAndClearDataAprilBeaconDiscovery</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Clear beacons Data and Stops CoreBluetooth based beacon discovery process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopAndClearDataAprilBeaconDiscovery</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Clear beacons Data and Stops CoreBluetooth based beacon discovery process.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBluetoothManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopAprilBeaconDiscovery" title="stopAprilBeaconDiscovery"></a>
+	<h3 class="subsubtitle method-title">stopAprilBeaconDiscovery</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stops CoreBluetooth based beacon discovery process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopAprilBeaconDiscovery</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>void</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Stops CoreBluetooth based beacon discovery process.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ABBluetoothManager.h</code><br />
 	</div>				
 	
 	

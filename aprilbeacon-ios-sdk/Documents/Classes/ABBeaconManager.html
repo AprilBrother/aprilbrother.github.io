@@ -66,27 +66,19 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/addCustomBeaconNameFilter:">- addCustomBeaconNameFilter:</option>
-		
-		<option value="//api/name/removeCustomBeaconNameFilter:">- removeCustomBeaconNameFilter:</option>
+		<option value="//api/name/requestAlwaysAuthorization">- requestAlwaysAuthorization</option>
 		
 		<option value="//api/name/requestStateForRegion:">- requestStateForRegion:</option>
 		
+		<option value="//api/name/requestWhenInUseAuthorization">- requestWhenInUseAuthorization</option>
+		
 		<option value="//api/name/startAdvertisingWithProximityUUID:major:minor:identifier:">- startAdvertisingWithProximityUUID:major:minor:identifier:</option>
-		
-		<option value="//api/name/startAprilBeaconsDiscovery">- startAprilBeaconsDiscovery</option>
-		
-		<option value="//api/name/startAprilSensorsDiscovery">- startAprilSensorsDiscovery</option>
 		
 		<option value="//api/name/startMonitoringForRegion:">- startMonitoringForRegion:</option>
 		
 		<option value="//api/name/startRangingBeaconsInRegion:">- startRangingBeaconsInRegion:</option>
 		
 		<option value="//api/name/stopAdvertising">- stopAdvertising</option>
-		
-		<option value="//api/name/stopAndClearDataAprilBeaconDiscovery">- stopAndClearDataAprilBeaconDiscovery</option>
-		
-		<option value="//api/name/stopAprilBeaconDiscovery">- stopAprilBeaconDiscovery</option>
 		
 		<option value="//api/name/stopMonitoringForRegion:">- stopMonitoringForRegion:</option>
 		
@@ -179,6 +171,98 @@
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Allows to avoid beacons with unknown state (proximity == 0), when ranging. Default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestWhenInUseAuthorization" title="requestWhenInUseAuthorization"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestWhenInUseAuthorization">&ndash;&nbsp;requestWhenInUseAuthorization</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>See CLLocationManager requestWhenInUseAuthorization</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestWhenInUseAuthorization</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>See CLLocationManager requestWhenInUseAuthorization</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestAlwaysAuthorization" title="requestAlwaysAuthorization"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestAlwaysAuthorization">&ndash;&nbsp;requestAlwaysAuthorization</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>See CLLocationManager requestAlwaysAuthorization</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestAlwaysAuthorization</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>See CLLocationManager requestAlwaysAuthorization</p>
 			</div>
 			
 
@@ -674,355 +758,6 @@ April beacon region.</p>
 </div>
 						</div>
 						
-
-						<a title="CoreBluetooth based utility methods" name="task_CoreBluetooth based utility methods"></a>
-						<h2 class="task-title">CoreBluetooth based utility methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/startAprilBeaconsDiscovery" title="startAprilBeaconsDiscovery"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startAprilBeaconsDiscovery">&ndash;&nbsp;startAprilBeaconsDiscovery</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Start beacon discovery process based on CoreBluetooth
-framework. Method is useful for older beacons discovery
-that are not advertising as iBeacons.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)startAprilBeaconsDiscovery</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Start beacon discovery process based on CoreBluetooth
-framework. Method is useful for older beacons discovery
-that are not advertising as iBeacons.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/startAprilSensorsDiscovery" title="startAprilSensorsDiscovery"></a>
-	<h3 class="method-title"><code><a href="#//api/name/startAprilSensorsDiscovery">&ndash;&nbsp;startAprilSensorsDiscovery</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Start sensor discovery process based on CoreBluetooth
-framework. Method is useful for older beacons discovery
-that are not advertising as iBeacons.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)startAprilSensorsDiscovery</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Start sensor discovery process based on CoreBluetooth
-framework. Method is useful for older beacons discovery
-that are not advertising as iBeacons.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/stopAprilBeaconDiscovery" title="stopAprilBeaconDiscovery"></a>
-	<h3 class="method-title"><code><a href="#//api/name/stopAprilBeaconDiscovery">&ndash;&nbsp;stopAprilBeaconDiscovery</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Stops CoreBluetooth based beacon discovery process.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)stopAprilBeaconDiscovery</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Stops CoreBluetooth based beacon discovery process.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/stopAndClearDataAprilBeaconDiscovery" title="stopAndClearDataAprilBeaconDiscovery"></a>
-	<h3 class="method-title"><code><a href="#//api/name/stopAndClearDataAprilBeaconDiscovery">&ndash;&nbsp;stopAndClearDataAprilBeaconDiscovery</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Clear beacons Data and Stops CoreBluetooth based beacon discovery process.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)stopAndClearDataAprilBeaconDiscovery</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Clear beacons Data and Stops CoreBluetooth based beacon discovery process.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="Scan settings through bluetooth" name="task_Scan settings through bluetooth"></a>
-						<h2 class="task-title">Scan settings through bluetooth</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/addCustomBeaconNameFilter:" title="addCustomBeaconNameFilter:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/addCustomBeaconNameFilter:">&ndash;&nbsp;addCustomBeaconNameFilter:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Beacons whose name begin with specified name can be found.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)addCustomBeaconNameFilter:(NSString *)<em>beaconPrefixName</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>beaconPrefixName</code></th>
-						<td><p>name want to discovered</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Beacons whose name begin with specified name can be found.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/removeCustomBeaconNameFilter:" title="removeCustomBeaconNameFilter:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/removeCustomBeaconNameFilter:">&ndash;&nbsp;removeCustomBeaconNameFilter:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Remove filter of specified name.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)removeCustomBeaconNameFilter:(NSString *)<em>beaconPrefixName</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>beaconPrefixName</code></th>
-						<td><p>name want to removed from filter;</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Remove filter of specified name.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
 					</div>
 					
 					
@@ -1033,7 +768,7 @@ that are not advertising as iBeacons.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 AprilBrother. All rights reserved. Updated: 2015-04-22</p>
+						<p class="copyright">Copyright &copy; 2015 AprilBrother. All rights reserved. Updated: 2015-12-16</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

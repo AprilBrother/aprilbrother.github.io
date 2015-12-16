@@ -43,6 +43,8 @@
 							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 
 	
 	
@@ -58,11 +60,17 @@
 		
 		<option value="//api/name/batteryLevel">batteryLevel</option>
 		
+		<option value="//api/name/broadcastType">broadcastType</option>
+		
 		<option value="//api/name/distance">distance</option>
+		
+		<option value="//api/name/eddyStoneURL">eddyStoneURL</option>
 		
 		<option value="//api/name/firmwareRevision">firmwareRevision</option>
 		
 		<option value="//api/name/isConnected">isConnected</option>
+		
+		<option value="//api/name/isSupportEddystone">isSupportEddystone</option>
 		
 		<option value="//api/name/macAddress">macAddress</option>
 		
@@ -94,47 +102,17 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/authBeaconWithPassword:withCompletion:">- authBeaconWithPassword:withCompletion:</option>
-		
-		<option value="//api/name/connectToBeacon:">- connectToBeacon:</option>
+		<option value="//api/name/connectToBeacon">- connectToBeacon</option>
 		
 		<option value="//api/name/disconnectBeacon">- disconnectBeacon</option>
 		
-		<option value="//api/name/readBeaconAdvIntervalWithCompletion:">- readBeaconAdvIntervalWithCompletion:</option>
+		<option value="//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:broadcastType:withCompletion:">- writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:broadcastType:withCompletion:</option>
 		
-		<option value="//api/name/readBeaconBatteryWithCompletion:">- readBeaconBatteryWithCompletion:</option>
+		<option value="//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:withCompletion:">- writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:withCompletion:</option>
 		
-		<option value="//api/name/readBeaconMacAddressWithCompletion:">- readBeaconMacAddressWithCompletion:</option>
+		<option value="//api/name/writeEddyStoneURLAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:">- writeEddyStoneURLAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:</option>
 		
-		<option value="//api/name/readBeaconMajorWithCompletion:">- readBeaconMajorWithCompletion:</option>
-		
-		<option value="//api/name/readBeaconMeasuredPowerWithCompletion:">- readBeaconMeasuredPowerWithCompletion:</option>
-		
-		<option value="//api/name/readBeaconMinorWithCompletion:">- readBeaconMinorWithCompletion:</option>
-		
-		<option value="//api/name/readBeaconProximityUUIDWithCompletion:">- readBeaconProximityUUIDWithCompletion:</option>
-		
-		<option value="//api/name/readBeaconTxPowerWithCompletion:">- readBeaconTxPowerWithCompletion:</option>
-		
-		<option value="//api/name/resetBeaconWithCompletion:">- resetBeaconWithCompletion:</option>
-		
-		<option value="//api/name/writeBeaconAdvInterval:withCompletion:">- writeBeaconAdvInterval:withCompletion:</option>
-		
-		<option value="//api/name/writeBeaconCommand:withCompletion:">- writeBeaconCommand:withCompletion:</option>
-		
-		<option value="//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:">- writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:</option>
-		
-		<option value="//api/name/writeBeaconMajor:withCompletion:">- writeBeaconMajor:withCompletion:</option>
-		
-		<option value="//api/name/writeBeaconMeasuredPower:withCompletion:">- writeBeaconMeasuredPower:withCompletion:</option>
-		
-		<option value="//api/name/writeBeaconMinor:withCompletion:">- writeBeaconMinor:withCompletion:</option>
-		
-		<option value="//api/name/writeBeaconPasscode:withCompletion:">- writeBeaconPasscode:withCompletion:</option>
-		
-		<option value="//api/name/writeBeaconProximityUUID:withCompletion:">- writeBeaconProximityUUID:withCompletion:</option>
-		
-		<option value="//api/name/writeBeaconTxPower:withCompletion:">- writeBeaconTxPower:withCompletion:</option>
+		<option value="//api/name/writeEddyStoneUidAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:">- writeEddyStoneUidAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:</option>
 		
 	</optgroup>
 	
@@ -169,6 +147,14 @@
 					
 
                     
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ABBeacon defines properties of April beacon, you can get parameters of iBeacon from ABBeacon</p>
+					</div>
+					
+					
 
 					
 					
@@ -212,55 +198,6 @@
 				<p>proximityUUID</p>
 
 <p>Proximity identifier associated with the beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/macAddress" title="macAddress"></a>
-	<h3 class="method-title"><code><a href="#//api/name/macAddress">&nbsp;&nbsp;macAddress</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>macAddress</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *macAddress</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>macAddress</p>
-
-<p>Discussion:
-Hardware MAC address of the beacon.</p>
 			</div>
 			
 
@@ -423,54 +360,6 @@ This value is an average of the RSSI samples collected since this beacon was las
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/distance" title="distance"></a>
-	<h3 class="method-title"><code><a href="#//api/name/distance">&nbsp;&nbsp;distance</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p><a href="#//api/name/proximity">proximity</a></p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *distance</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p><a href="#//api/name/proximity">proximity</a></p>
-
-<p>The value in this property gives a general sense of the relative distance to the beacon. Use it to quickly identify beacons that are nearer to the user rather than farther away.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/proximity" title="proximity"></a>
 	<h3 class="method-title"><code><a href="#//api/name/proximity">&nbsp;&nbsp;proximity</a></code>
 </h3>
@@ -502,6 +391,103 @@ This value is an average of the RSSI samples collected since this beacon was las
 				<p>proximity</p>
 
 <p>The value in this property gives a general sense of the relative <a href="#//api/name/distance">distance</a> to the beacon. Use it to quickly identify beacons that are nearer to the user rather than farther away.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/macAddress" title="macAddress"></a>
+	<h3 class="method-title"><code><a href="#//api/name/macAddress">&nbsp;&nbsp;macAddress</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>macAddress</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *macAddress</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>macAddress</p>
+
+<p>Discussion:
+Hardware MAC address of the beacon.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/distance" title="distance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/distance">&nbsp;&nbsp;distance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="#//api/name/proximity">proximity</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSNumber *distance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/proximity">proximity</a></p>
+
+<p>The value in this property gives a general sense of the relative distance to the beacon. Use it to quickly identify beacons that are nearer to the user rather than farther away.</p>
 			</div>
 			
 
@@ -749,7 +735,7 @@ This value is an average of the RSSI samples collected since this beacon was las
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>advInterval</p>
 
-<p>Advertising interval of the beacon. Value change from 50ms to 2000ms. Value available after connection with the beacon</p>
+<p>Advertising interval of the beacon. Value change from 100ms to 2000ms, The unit is 100ms. Value available after connection with the beacon</p>
 			</div>
 			
 
@@ -958,6 +944,153 @@ This value is an average of the RSSI samples collected since this beacon was las
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/isSupportEddystone" title="isSupportEddystone"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isSupportEddystone">&nbsp;&nbsp;isSupportEddystone</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>isSupportEddystone</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isSupportEddystone</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>isSupportEddystone</p>
+
+<p>is beacon support Google Eddystone protocol. Value available after connection with the beacon</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/broadcastType" title="broadcastType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/broadcastType">&nbsp;&nbsp;broadcastType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>broadcastType</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) ABBroadcastType broadcastType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>broadcastType</p>
+
+<p>if <a href="#//api/name/isSupportEddystone">isSupportEddystone</a> is true, use this to check the broadcast type. Value available after connection with the beacon
+ABBeaconBroadcastiBeacon Default type
+ABBeaconBroadcastEddystoneUid broadcast UUID is <a href="#//api/name/proximityUUID">proximityUUID</a>
+ABBeaconBroadcastEddystoneURL broadcast URL is <a href="#//api/name/eddyStoneURL">eddyStoneURL</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/eddyStoneURL" title="eddyStoneURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/eddyStoneURL">&nbsp;&nbsp;eddyStoneURL</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>eddyStoneURL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *eddyStoneURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>eddyStoneURL</p>
+
+<p>if broadcast type is ABBeaconBroadcastEddystoneURL, use this to get broadcast URL. Value available after connection with the beacon</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -967,8 +1100,8 @@ This value is an average of the RSSI samples collected since this beacon was las
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/connectToBeacon:" title="connectToBeacon:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/connectToBeacon:">&ndash;&nbsp;connectToBeacon:</a></code>
+	<a name="//api/name/connectToBeacon" title="connectToBeacon"></a>
+	<h3 class="method-title"><code><a href="#//api/name/connectToBeacon">&ndash;&nbsp;connectToBeacon</a></code>
 </h3>
 
 	<div class="method-info">
@@ -985,7 +1118,7 @@ Major, Minor, Power and Advertising interval.</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)connectToBeacon:(ABConnectedReadState)<em>state</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)connectToBeacon</code></div>
 
 		    
 			
@@ -1072,1222 +1205,9 @@ Major, Minor, Power and Advertising interval.</p>
 			
 		</div>
 	</div>
-</div>
-						</div>
-						
-
-						<a title="Methods for reading beacon configuration" name="task_Methods for reading beacon configuration"></a>
-						<h2 class="task-title">Methods for reading beacon configuration</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/readBeaconProximityUUIDWithCompletion:" title="readBeaconProximityUUIDWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readBeaconProximityUUIDWithCompletion:">&ndash;&nbsp;readBeaconProximityUUIDWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read Proximity UUID of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)readBeaconProximityUUIDWithCompletion:(ABStringCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block with Proximity UUID value as param</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read Proximity UUID of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
 </div><div class="section-method">
-	<a name="//api/name/readBeaconMacAddressWithCompletion:" title="readBeaconMacAddressWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readBeaconMacAddressWithCompletion:">&ndash;&nbsp;readBeaconMacAddressWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read <a href="#//api/name/macAddress">macAddress</a> of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)readBeaconMacAddressWithCompletion:(ABStringCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block with <a href="#//api/name/macAddress">macAddress</a> value as param</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read <a href="#//api/name/macAddress">macAddress</a> of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/readBeaconMajorWithCompletion:" title="readBeaconMajorWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readBeaconMajorWithCompletion:">&ndash;&nbsp;readBeaconMajorWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read <a href="#//api/name/major">major</a> of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)readBeaconMajorWithCompletion:(ABUnsignedShortCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block with <a href="#//api/name/major">major</a> value as param</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read <a href="#//api/name/major">major</a> of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/readBeaconMinorWithCompletion:" title="readBeaconMinorWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readBeaconMinorWithCompletion:">&ndash;&nbsp;readBeaconMinorWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read <a href="#//api/name/minor">minor</a> of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)readBeaconMinorWithCompletion:(ABUnsignedShortCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block with <a href="#//api/name/minor">minor</a> value as param</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read <a href="#//api/name/minor">minor</a> of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/readBeaconAdvIntervalWithCompletion:" title="readBeaconAdvIntervalWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readBeaconAdvIntervalWithCompletion:">&ndash;&nbsp;readBeaconAdvIntervalWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read advertising interval of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)readBeaconAdvIntervalWithCompletion:(ABUnsignedShortCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block with advertising interval value as param</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read advertising interval of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/readBeaconMeasuredPowerWithCompletion:" title="readBeaconMeasuredPowerWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readBeaconMeasuredPowerWithCompletion:">&ndash;&nbsp;readBeaconMeasuredPowerWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read power of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)readBeaconMeasuredPowerWithCompletion:(ABPowerCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block with power value as param</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>float value of beacon power</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read power of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/readBeaconTxPowerWithCompletion:" title="readBeaconTxPowerWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readBeaconTxPowerWithCompletion:">&ndash;&nbsp;readBeaconTxPowerWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read Tx power of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)readBeaconTxPowerWithCompletion:(ABPowerCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block with power value as param</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p><a href="../Constants/ABTxPower.html">ABTxPower</a> of beacon Tx power</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read Tx power of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/readBeaconBatteryWithCompletion:" title="readBeaconBatteryWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/readBeaconBatteryWithCompletion:">&ndash;&nbsp;readBeaconBatteryWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Read battery level of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)readBeaconBatteryWithCompletion:(ABUnsignedShortCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block with battery level value as param</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Read battery level of connected beacon (Previous connection
-required)</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="Methods for writing beacon configuration" name="task_Methods for writing beacon configuration"></a>
-						<h2 class="task-title">Methods for writing beacon configuration</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/authBeaconWithPassword:withCompletion:" title="authBeaconWithPassword:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/authBeaconWithPassword:withCompletion:">&ndash;&nbsp;authBeaconWithPassword:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>check password of connected beacon before write values.
-new method for writeBeaconPassword</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)authBeaconWithPassword:(NSString *)<em>password</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>password</code></th>
-						<td><p>password of beacon</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>check password of connected beacon before write values.
-new method for writeBeaconPassword</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/resetBeaconWithCompletion:" title="resetBeaconWithCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/resetBeaconWithCompletion:">&ndash;&nbsp;resetBeaconWithCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Reset connected beacon.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)resetBeaconWithCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Reset connected beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconProximityUUID:withCompletion:" title="writeBeaconProximityUUID:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconProximityUUID:withCompletion:">&ndash;&nbsp;writeBeaconProximityUUID:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Writes Proximity UUID param to bluetooth connected beacon. Please  remember that If you change the UUID to your very own value anyone can read it, copy it and spoof your beacons. So if you are working on a mission critical application where security is an issue - be sure to implement it on your end. We are also working on a secure mode for our beacons and it will be included in one of the next firmware updates.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconProximityUUID:(NSString *)<em>uuid</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>uuid</code></th>
-						<td><p>new Proximity UUID value</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Writes Proximity UUID param to bluetooth connected beacon. Please  remember that If you change the UUID to your very own value anyone can read it, copy it and spoof your beacons. So if you are working on a mission critical application where security is an issue - be sure to implement it on your end. We are also working on a secure mode for our beacons and it will be included in one of the next firmware updates.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconMajor:withCompletion:" title="writeBeaconMajor:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconMajor:withCompletion:">&ndash;&nbsp;writeBeaconMajor:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Writes <a href="#//api/name/major">major</a> param to bluetooth connected beacon.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconMajor:(unsigned short)<em>major</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>major</code></th>
-						<td><p><a href="#//api/name/major">major</a> beacon value</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Writes <a href="#//api/name/major">major</a> param to bluetooth connected beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconMinor:withCompletion:" title="writeBeaconMinor:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconMinor:withCompletion:">&ndash;&nbsp;writeBeaconMinor:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Writes <a href="#//api/name/minor">minor</a> param to bluetooth connected beacon.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconMinor:(unsigned short)<em>minor</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>minor</code></th>
-						<td><p><a href="#//api/name/minor">minor</a> beacon value</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Writes <a href="#//api/name/minor">minor</a> param to bluetooth connected beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconAdvInterval:withCompletion:" title="writeBeaconAdvInterval:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconAdvInterval:withCompletion:">&ndash;&nbsp;writeBeaconAdvInterval:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Writes advertising interval (in milisec) of connected beacon.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconAdvInterval:(unsigned short)<em>interval</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>interval</code></th>
-						<td><p>interval of beacon (50 - 2000 ms)</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Writes advertising interval (in milisec) of connected beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconCommand:withCompletion:" title="writeBeaconCommand:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconCommand:withCompletion:">&ndash;&nbsp;writeBeaconCommand:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Writes command to connected beacon.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconCommand:(NSString *)<em>command</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>command</code></th>
-						<td><p>command of beacon</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Writes command to connected beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconPasscode:withCompletion:" title="writeBeaconPasscode:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconPasscode:withCompletion:">&ndash;&nbsp;writeBeaconPasscode:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Writes passcode to connected beacon.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconPasscode:(NSString *)<em>passcode</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>passcode</code></th>
-						<td><p>passcode of beacon</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Writes passcode to connected beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconMeasuredPower:withCompletion:" title="writeBeaconMeasuredPower:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconMeasuredPower:withCompletion:">&ndash;&nbsp;writeBeaconMeasuredPower:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Writes power to connected beacon.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconMeasuredPower:(unsigned short)<em>power</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>power</code></th>
-						<td><p>new power of beacon</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Writes power to connected beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconTxPower:withCompletion:" title="writeBeaconTxPower:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconTxPower:withCompletion:">&ndash;&nbsp;writeBeaconTxPower:withCompletion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Writes power of bluetooth connected beacon.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconTxPower:(ABTxPower)<em>power</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>power</code></th>
-						<td><p>advertising beacon power (can take value from ABBeaconPowerLevel1 / waak to ABBeaconPowerLevel8 / strong)</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completion</code></th>
-						<td><p>block handling operation completion</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>void</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Writes power of bluetooth connected beacon.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:" title="writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:">&ndash;&nbsp;writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:autoRestart:withCompletion:</a></code>
+	<a name="//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:withCompletion:" title="writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:withCompletion:">&ndash;&nbsp;writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:withCompletion:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -2304,7 +1224,7 @@ If you set value to nil, it won&rsquo;t modify the value</p>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)writeBeaconInfoByPassword:(NSString *)<em>password</em> uuid:(NSString *)<em>uuidString</em> major:(NSNumber *)<em>major</em> minor:(NSNumber *)<em>minor</em> txPower:(NSNumber *)<em>txPower</em> advInterval:(NSNumber *)<em>advInterval</em> measuredPower:(NSNumber *)<em>measuredPower</em> newpassword:(NSString *)<em>newpassword</em> autoRestart:(BOOL)<em>autoRestart</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)writeBeaconInfoByPassword:(NSString *)<em>password</em> uuid:(NSString *)<em>uuidString</em> major:(NSNumber *)<em>major</em> minor:(NSNumber *)<em>minor</em> txPower:(NSNumber *)<em>txPower</em> advInterval:(NSNumber *)<em>advInterval</em> measuredPower:(NSNumber *)<em>measuredPower</em> newpassword:(NSString *)<em>newpassword</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
 
 		    
 			
@@ -2353,8 +1273,279 @@ If you set value to nil, it won&rsquo;t modify the value</p>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>autoRestart</code></th>
-						<td><p>Default YES</p></td>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>void</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes beacon info to connected beacon
+If you set the password to nil, it will use the default password
+If you set value to nil, it won&rsquo;t modify the value</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:broadcastType:withCompletion:" title="writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:broadcastType:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:broadcastType:withCompletion:">&ndash;&nbsp;writeBeaconInfoByPassword:uuid:major:minor:txPower:advInterval:measuredPower:newpassword:broadcastType:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes beacon info to connected beacon
+If you set the password to nil, it will use the default password
+If you set value to nil, it won&rsquo;t modify the value</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeBeaconInfoByPassword:(NSString *)<em>password</em> uuid:(NSString *)<em>uuidString</em> major:(NSNumber *)<em>major</em> minor:(NSNumber *)<em>minor</em> txPower:(NSNumber *)<em>txPower</em> advInterval:(NSNumber *)<em>advInterval</em> measuredPower:(NSNumber *)<em>measuredPower</em> newpassword:(NSString *)<em>newpassword</em> broadcastType:(ABBroadcastType)<em>type</em> withCompletion:(ABCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>auth password, default &lsquo;AprilBrother&rsquo;, &lsquo;195660&rsquo; for EEK beacon</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuidString</code></th>
+						<td><p>new Proximity UUID value</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>major</code></th>
+						<td><p>new <a href="#//api/name/major">major</a> of iBeacon</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minor</code></th>
+						<td><p>new minro of iBeacon</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>txPower</code></th>
+						<td><p>@(<a href="../Constants/ABTxPower.html">ABTxPower</a>) tx power</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>advInterval</code></th>
+						<td><p>advertise interval</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>measuredPower</code></th>
+						<td><p>measured power of iBeacon</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newpassword</code></th>
+						<td><p>new password</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>broadcast type</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>void</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes beacon info to connected beacon
+If you set the password to nil, it will use the default password
+If you set value to nil, it won&rsquo;t modify the value</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeEddyStoneURLAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:" title="writeEddyStoneURLAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeEddyStoneURLAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:">&ndash;&nbsp;writeEddyStoneURLAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes beacon info to connected beacon
+If you set the password to nil, it will use the default password
+If you set value to nil, it won&rsquo;t modify the value</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeEddyStoneURLAndReset:(NSString *)<em>url</em> broadcastType:(ABBroadcastType)<em>type</em> password:(NSString *)<em>password</em> txPower:(NSNumber *)<em>txPower</em> advInterval:(NSNumber *)<em>advInterval</em> newpassword:(NSString *)<em>newpassword</em> completion:(ABCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>broadcast url</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>broadcast type</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>auth password, default &lsquo;AprilBrother&rsquo;, &lsquo;195660&rsquo; for EEK beacon</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>callback</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>void</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Writes beacon info to connected beacon
+If you set the password to nil, it will use the default password
+If you set value to nil, it won&rsquo;t modify the value</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeEddyStoneUidAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:" title="writeEddyStoneUidAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeEddyStoneUidAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:">&ndash;&nbsp;writeEddyStoneUidAndReset:broadcastType:password:txPower:advInterval:newpassword:completion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Writes beacon info to connected beacon
+If you set the password to nil, it will use the default password
+If you set value to nil, it won&rsquo;t modify the value</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)writeEddyStoneUidAndReset:(NSString *)<em>uuidString</em> broadcastType:(ABBroadcastType)<em>type</em> password:(NSString *)<em>password</em> txPower:(NSNumber *)<em>txPower</em> advInterval:(NSNumber *)<em>advInterval</em> newpassword:(NSString *)<em>newpassword</em> completion:(ABCompletionBlock)<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uuidString</code></th>
+						<td><p>broadcast UUID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>broadcast type</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>auth password, default &lsquo;AprilBrother&rsquo;, &lsquo;195660&rsquo; for EEK beacon</p></td>
 					</tr>
 				
 					<tr>
@@ -2410,7 +1601,7 @@ If you set value to nil, it won&rsquo;t modify the value</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 AprilBrother. All rights reserved. Updated: 2015-04-22</p>
+						<p class="copyright">Copyright &copy; 2015 AprilBrother. All rights reserved. Updated: 2015-12-16</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

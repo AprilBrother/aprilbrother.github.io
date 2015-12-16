@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>ABBeaconDelegate Protocol Reference</title>
+	<title>ABBluetoothManagerDelegate Protocol Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -60,9 +60,9 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/beaconDidConnected:withError:">- beaconDidConnected:withError:</option>
+		<option value="//api/name/beaconManager:didDiscoverBeacon:">- beaconManager:didDiscoverBeacon:</option>
 		
-		<option value="//api/name/beaconDidDisconnect:withError:">- beaconDidDisconnect:withError:</option>
+		<option value="//api/name/beaconManager:didDiscoverBeacons:">- beaconManager:didDiscoverBeacons:</option>
 		
 	</optgroup>
 	
@@ -79,7 +79,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">ABBeaconDelegate Protocol Reference</h1>
+					<h1 class="title">ABBluetoothManagerDelegate Protocol Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -88,7 +88,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>ABBeacon.h</td>
+	<td>ABBluetoothManager.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -98,7 +98,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>ABBeaconDelegate defines beacon connection delegate mathods. Connection is asynchronous operation so you need to be prepared that eg. beaconDidDisconnectWith: method can be invoked without previous action.</p>
+						<p>The ABBluetoothManagerDelegate protocol defines the delegate methods to respond for related events.</p>
 					</div>
 					
 					
@@ -114,8 +114,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/beaconDidConnected:withError:" title="beaconDidConnected:withError:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/beaconDidConnected:withError:">&ndash;&nbsp;beaconDidConnected:withError:</a></code>
+	<a name="//api/name/beaconManager:didDiscoverBeacons:" title="beaconManager:didDiscoverBeacons:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beaconManager:didDiscoverBeacons:">&ndash;&nbsp;beaconManager:didDiscoverBeacons:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -125,14 +125,14 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Delegate method that beacon did connected with error.
-if error is not nil, means beacon didn&rsquo;t be connected
-or beacon connected</p>
+				<p>Delegate method invoked to handle discovered
+<a href="../Classes/ABBeacon.html">ABBeacon</a> objects using CoreBluetooth framework
+in particular region.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)beaconDidConnected:(ABBeacon *)<em>beacon</em> withError:(NSError *)<em>error</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)beaconManager:(ABBluetoothManager *)<em>manager</em> didDiscoverBeacons:(NSArray *)<em>beacons</em></code></div>
 
 		    
 			
@@ -141,13 +141,13 @@ or beacon connected</p>
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>beacon</code></th>
-						<td><p>reference to beacon object</p></td>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>April beacon manager</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>error</code></th>
-						<td><p>beacon connect failed error or nil</p></td>
+						<th scope="row" class="argument-name"><code>beacons</code></th>
+						<td><p>all beacons as <a href="../Classes/ABBeacon.html">ABBeacon</a> objects</p></td>
 					</tr>
 				
 				</table>
@@ -166,9 +166,9 @@ or beacon connected</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Delegate method that beacon did connected with error.
-if error is not nil, means beacon didn&rsquo;t be connected
-or beacon connected</p>
+				<p>Delegate method invoked to handle discovered
+<a href="../Classes/ABBeacon.html">ABBeacon</a> objects using CoreBluetooth framework
+in particular region.</p>
 			</div>
 			
 
@@ -179,15 +179,15 @@ or beacon connected</p>
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+				<p><code class="declared-in-ref">ABBluetoothManager.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/beaconDidDisconnect:withError:" title="beaconDidDisconnect:withError:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/beaconDidDisconnect:withError:">&ndash;&nbsp;beaconDidDisconnect:withError:</a></code>
+	<a name="//api/name/beaconManager:didDiscoverBeacon:" title="beaconManager:didDiscoverBeacon:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/beaconManager:didDiscoverBeacon:">&ndash;&nbsp;beaconManager:didDiscoverBeacon:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -197,12 +197,14 @@ or beacon connected</p>
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Delegate method that beacon did disconnect with device.</p>
+				<p>Delegate method invoked to handle discovered
+<a href="../Classes/ABBeacon.html">ABBeacon</a> object using CoreBluetooth framework
+in particular region.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)beaconDidDisconnect:(ABBeacon *)<em>beacon</em> withError:(NSError *)<em>error</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)beaconManager:(ABBluetoothManager *)<em>manager</em> didDiscoverBeacon:(ABBeacon *)<em>beacon</em></code></div>
 
 		    
 			
@@ -211,13 +213,14 @@ or beacon connected</p>
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>beacon</code></th>
-						<td><p>reference to beacon object</p></td>
+						<th scope="row" class="argument-name"><code>manager</code></th>
+						<td><p>April beacon manager</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>error</code></th>
-						<td><p>information about reason of error</p></td>
+						<th scope="row" class="argument-name"><code>beacon</code></th>
+						<td><p>return single beacon once, not all beacons,
+diffent from beaconManager:manager didDiscoverBeacons:</p></td>
 					</tr>
 				
 				</table>
@@ -236,7 +239,9 @@ or beacon connected</p>
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Delegate method that beacon did disconnect with device.</p>
+				<p>Delegate method invoked to handle discovered
+<a href="../Classes/ABBeacon.html">ABBeacon</a> object using CoreBluetooth framework
+in particular region.</p>
 			</div>
 			
 
@@ -247,7 +252,7 @@ or beacon connected</p>
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">ABBeacon.h</code></p>
+				<p><code class="declared-in-ref">ABBluetoothManager.h</code></p>
 			</div>
 			
 			

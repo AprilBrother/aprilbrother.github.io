@@ -1,49 +1,69 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
-		<title>ABBeaconManager Class Reference</title>
-		<meta id="xcode-display" name="xcode-display" content="render"/>
-		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
-		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
-		<meta name="generator" content="appledoc 2.2 (build 963)" />
-	</head>
-	<body>
-		<header id="top_header">
-			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">AprilBeaconSDK </a></h1>
-				<a id="developerHome" href="../index.html">AprilBrother</a>
-			</div>
+<head>
+	<meta charset="utf-8">
+
+	<title>ABBeaconManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
 			
-			<div id="title" role="banner">
-				<h1 class="hideInXcode">ABBeaconManager Class Reference</h1>
-			</div>
-			<ul id="headerButtons" role="toolbar">
-				<li id="toc_button">
-					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
-				</li>
-				<li id="jumpto_button" role="navigation">
-					<select id="jumpTo">
+			<h1 id="library-title">
+				<a href="../index.html">AprilBeaconSDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">AprilBrother</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
 	<option value="top">Jump To&#133;</option>
 	
 	<option value="overview">Overview</option>
 	
-	
+
 	
 	
 	<option value="tasks">Tasks</option>
 	
 	
+
 	
 	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/avoidUnknownStateBeacons">avoidUnknownStateBeacons</option>
+		
+	</optgroup>
 	
-	<option value="properties">Properties</option>
+
 	
-	<option value="//api/name/avoidUnknownStateBeacons">&nbsp;&nbsp;&nbsp;&nbsp;avoidUnknownStateBeacons</option>
+
 	
-	
-	
-<<<<<<< HEAD
 	<optgroup label="Instance Methods">
 		
 		<option value="//api/name/requestAlwaysAuthorization">- requestAlwaysAuthorization</option>
@@ -65,111 +85,34 @@
 		<option value="//api/name/stopRangingBeaconsInRegion:">- stopRangingBeaconsInRegion:</option>
 		
 	</optgroup>
-=======
-	
-	
-	
-	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/requestStateForRegion:">&nbsp;&nbsp;&nbsp;&nbsp;- requestStateForRegion:</option>
-	
-	<option value="//api/name/startAdvertisingWithProximityUUID:major:minor:identifier:">&nbsp;&nbsp;&nbsp;&nbsp;- startAdvertisingWithProximityUUID:major:minor:identifier:</option>
-	
-	<option value="//api/name/startMonitoringForRegion:">&nbsp;&nbsp;&nbsp;&nbsp;- startMonitoringForRegion:</option>
-	
-	<option value="//api/name/startRangingBeaconsInRegion:">&nbsp;&nbsp;&nbsp;&nbsp;- startRangingBeaconsInRegion:</option>
-	
-	<option value="//api/name/stopAdvertising">&nbsp;&nbsp;&nbsp;&nbsp;- stopAdvertising</option>
-	
-	<option value="//api/name/stopMonitoringForRegion:">&nbsp;&nbsp;&nbsp;&nbsp;- stopMonitoringForRegion:</option>
-	
-	<option value="//api/name/stopRangingBeaconsInRegion:">&nbsp;&nbsp;&nbsp;&nbsp;- stopRangingBeaconsInRegion:</option>
-	
->>>>>>> af325ee471a8a357adb198f81d2148c42313ed0f
 	
 	
 </select>
-				</li>
-			</ul>
-		</header>
-		<nav id="tocContainer" class="isShowingTOC">
-			<ul id="toc" role="tree">
-				
-<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
 
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ABBeaconManager Class Reference</h1>
 
-
-
-<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_CoreLocation based iBeacon monitoring and ranging methods">CoreLocation based iBeacon monitoring and ranging methods</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Turning device into iBeacon">Turning device into iBeacon</a></span></li>
-	
-</ul></li>
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/avoidUnknownStateBeacons">avoidUnknownStateBeacons</a></span></li>
-	
-</ul></li>
-
-
-
-
-
-<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestStateForRegion:">requestStateForRegion:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startAdvertisingWithProximityUUID:major:minor:identifier:">startAdvertisingWithProximityUUID:major:minor:identifier:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startMonitoringForRegion:">startMonitoringForRegion:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRangingBeaconsInRegion:">startRangingBeaconsInRegion:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopAdvertising">stopAdvertising</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopMonitoringForRegion:">stopMonitoringForRegion:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopRangingBeaconsInRegion:">stopRangingBeaconsInRegion:</a></span></li>
-	
-</ul></li>
-
-
-			</ul>
-		</nav>
-		<article>
-			<div id="contents" class="isShowingTOC" role="main">
-				<a title="ABBeaconManager Class Reference" name="top"></a>
-				<div class="main-navigation navigation-top">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="header">
-					<div class="section-header">
-						<h1 class="title title-header">ABBeaconManager Class Reference</h1>
-					</div>		
-				</div>
-				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">NSObject</td>
+	<th>Inherits from</th>
+	<td>NSObject</td>
 </tr><tr>
-	<td class="specification-title">Declared in</td>
-	<td class="specification-value">ABBeaconManager.h</td>
+	<th>Declared in</th>
+	<td>ABBeaconManager.h</td>
 </tr>
 						</tbody></table></div>
 					
-                    
+
                     
 					
 					<div class="section section-overview">
@@ -187,259 +130,63 @@
 					</div>
 					
 					
-					
+
 					
 					
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
-						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
-						
-						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/avoidUnknownStateBeacons">&nbsp;&nbsp;avoidUnknownStateBeacons</a></code>
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li>
-						</ul>
 						
-						
-						<a title="CoreLocation based iBeacon monitoring and ranging methods" name="task_CoreLocation based iBeacon monitoring and ranging methods"></a>
-						<h3 class="subsubtitle task-title">CoreLocation based iBeacon monitoring and ranging methods</h3>
+						<h2 class="task-title">Other Methods</h2>
 
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/startRangingBeaconsInRegion:">&ndash;&nbsp;startRangingBeaconsInRegion:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/stopRangingBeaconsInRegion:">&ndash;&nbsp;stopRangingBeaconsInRegion:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/startMonitoringForRegion:">&ndash;&nbsp;startMonitoringForRegion:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/stopMonitoringForRegion:">&ndash;&nbsp;stopMonitoringForRegion:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/requestStateForRegion:">&ndash;&nbsp;requestStateForRegion:</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Turning device into iBeacon" name="task_Turning device into iBeacon"></a>
-						<h3 class="subsubtitle task-title">Turning device into iBeacon</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/startAdvertisingWithProximityUUID:major:minor:identifier:">&ndash;&nbsp;startAdvertisingWithProximityUUID:major:minor:identifier:</a></code>
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/stopAdvertising">&ndash;&nbsp;stopAdvertising</a></code>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Properties" name="properties"></a>
-						<h2 class="subtitle subtitle-methods">Properties</h2>
-						
-						<div class="section-method">
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/avoidUnknownStateBeacons" title="avoidUnknownStateBeacons"></a>
-	<h3 class="subsubtitle method-title">avoidUnknownStateBeacons</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Allows to avoid beacons with unknown state (proximity == 0), when ranging. Default value is NO.</p>
-	</div>		
-	
-    
+	<h3 class="method-title"><code><a href="#//api/name/avoidUnknownStateBeacons">&nbsp;&nbsp;avoidUnknownStateBeacons</a></code>
+</h3>
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL avoidUnknownStateBeacons</code></div>
+	<div class="method-info">
+		<div class="pointy-thing"></div>
 
-    
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Allows to avoid beacons with unknown state (proximity == 0), when ranging. Default value is NO.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABBeaconManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-					</div>
-					
-					
-					
-					
-					
-					<div class="section section-methods">
-						<a title="Instance Methods" name="instance_methods"></a>
-						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/requestStateForRegion:" title="requestStateForRegion:"></a>
-	<h3 class="subsubtitle method-title">requestStateForRegion:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Allows to validate current state for particular region</p>
-	</div>		
-	
-    
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Allows to avoid beacons with unknown state (proximity == 0), when ranging. Default value is NO.</p>
+			</div>
+			
+		    
 
-	<div class="method-subsection method-declaration"><code>- (void)requestStateForRegion:(ABBeaconRegion *)<em>region</em></code></div>
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL avoidUnknownStateBeacons</code></div>
 
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>region</em></dt>
-			<dd><p>April beacon region</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>void</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Allows to validate current state for particular region</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABBeaconManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/startAdvertisingWithProximityUUID:major:minor:identifier:" title="startAdvertisingWithProximityUUID:major:minor:identifier:"></a>
-	<h3 class="subsubtitle method-title">startAdvertisingWithProximityUUID:major:minor:identifier:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Allows to turn device into virtual April beacon.</p>
-	</div>		
-	
-    
+		    
+			
 
-	<div class="method-subsection method-declaration"><code>- (void)startAdvertisingWithProximityUUID:(NSUUID *)<em>proximityUUID</em> major:(CLBeaconMajorValue)<em>major</em> minor:(CLBeaconMinorValue)<em>minor</em> identifier:(NSString *)<em>identifier</em></code></div>
+			
 
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>proximityUUID</em></dt>
-			<dd><p>proximity UUID beacon value</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>major</em></dt>
-			<dd><p>minor beacon value</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>minor</em></dt>
-			<dd><p>major beacon value</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>identifier</em></dt>
-			<dd><p>unique identifier for you region</p></dd>
-		</dl>
-		
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Allows to avoid beacons with unknown state (proximity == 0), when ranging. Default value is NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ABBeaconManager.h</code></p>
+			</div>
+			
+			
+		</div>
 	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>void</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Allows to turn device into virtual April beacon.</p>
-	</div>
-<<<<<<< HEAD
 </div><div class="section-method">
 	<a name="//api/name/requestWhenInUseAuthorization" title="requestWhenInUseAuthorization"></a>
 	<h3 class="method-title"><code><a href="#//api/name/requestWhenInUseAuthorization">&ndash;&nbsp;requestWhenInUseAuthorization</a></code>
@@ -532,90 +279,16 @@
 			
 		</div>
 	</div>
-=======
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABBeaconManager.h</code><br />
-	</div>				
-	
-	
->>>>>>> af325ee471a8a357adb198f81d2148c42313ed0f
 </div>
+						</div>
 						
-						<div class="section-method">
-	<a name="//api/name/startMonitoringForRegion:" title="startMonitoringForRegion:"></a>
-	<h3 class="subsubtitle method-title">startMonitoringForRegion:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Start monitoring for particular region.
-Functionality works in the background mode as well.
-Every time you enter or leave region appropriet
-delegate method inovked: beaconManager:didEnterRegtion:
-and beaconManager:didExitRegion:</p>
-	</div>		
-	
-    
 
-	<div class="method-subsection method-declaration"><code>- (void)startMonitoringForRegion:(ABBeaconRegion *)<em>region</em></code></div>
+						<a title="CoreLocation based iBeacon monitoring and ranging methods" name="task_CoreLocation based iBeacon monitoring and ranging methods"></a>
+						<h2 class="task-title">CoreLocation based iBeacon monitoring and ranging methods</h2>
 
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>region</em></dt>
-			<dd><p>April beacon region</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>void</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Start monitoring for particular region.
-Functionality works in the background mode as well.
-Every time you enter or leave region appropriet
-delegate method inovked: beaconManager:didEnterRegtion:
-and beaconManager:didExitRegion:</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABBeaconManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
+						<div class="task-list">
+							<div class="section-method">
 	<a name="//api/name/startRangingBeaconsInRegion:" title="startRangingBeaconsInRegion:"></a>
-<<<<<<< HEAD
 	<h3 class="method-title"><code><a href="#//api/name/startRangingBeaconsInRegion:">&ndash;&nbsp;startRangingBeaconsInRegion:</a></code>
 </h3>
 
@@ -1084,348 +757,28 @@ April beacon region.</p>
 	</div>
 </div>
 						</div>
-=======
-	<h3 class="subsubtitle method-title">startRangingBeaconsInRegion:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Range all April beacons that are visible in range.
-Delegate method beaconManager:didRangeBeacons:inRegion:
-is used to retrieve found beacons. Returned NSArray contains
-<a href="../Classes/ABBeacon.html">ABBeacon</a> objects.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)startRangingBeaconsInRegion:(ABBeaconRegion *)<em>region</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>region</em></dt>
-			<dd><p>April beacon region</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>void</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Range all April beacons that are visible in range.
-Delegate method beaconManager:didRangeBeacons:inRegion:
-is used to retrieve found beacons. Returned NSArray contains
-<a href="../Classes/ABBeacon.html">ABBeacon</a> objects.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABBeaconManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/stopAdvertising" title="stopAdvertising"></a>
-	<h3 class="subsubtitle method-title">stopAdvertising</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Stop beacon advertising</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)stopAdvertising</code></div>
-
-    
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>void</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Stop beacon advertising</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABBeaconManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/stopMonitoringForRegion:" title="stopMonitoringForRegion:"></a>
-	<h3 class="subsubtitle method-title">stopMonitoringForRegion:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Unsubscribe application from iOS monitoring of
-April beacon region.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)stopMonitoringForRegion:(ABBeaconRegion *)<em>region</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>region</em></dt>
-			<dd><p>April beacon region</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>void</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Unsubscribe application from iOS monitoring of
-April beacon region.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABBeaconManager.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/stopRangingBeaconsInRegion:" title="stopRangingBeaconsInRegion:"></a>
-	<h3 class="subsubtitle method-title">stopRangingBeaconsInRegion:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Stops ranging April beacons.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)stopRangingBeaconsInRegion:(ABBeaconRegion *)<em>region</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>region</em></dt>
-			<dd><p>April beacon region</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>void</p>
-	</div>
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>Stops ranging April beacons.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">ABBeaconManager.h</code><br />
-	</div>				
-	
-	
-</div>
->>>>>>> af325ee471a8a357adb198f81d2148c42313ed0f
 						
 					</div>
 					
 					
+
                     
-                    
-				</div>
-				<div class="main-navigation navigation-bottom">
-					<ul>
-	<li><a href="../index.html">Index</a></li>
-	<li><a href="../hierarchy.html">Hierarchy</a></li>
-</ul>
-				</div>
-				<div id="footer">
-					<hr />
+				</main>
+
+				<footer>
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 AprilBrother. All rights reserved. (Last updated: 2015-10-20)</span><br />
 						
-<<<<<<< HEAD
 						<p class="copyright">Copyright &copy; 2015 AprilBrother. All rights reserved. Updated: 2015-12-16</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
-=======
-						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
->>>>>>> af325ee471a8a357adb198f81d2148c42313ed0f
 						
 					</div>
-				</div>
+				</footer>
 			</div>
-		</article>
-		<script type="text/javascript">
-			function jumpToChange()
-			{
-				window.location.hash = this.options[this.selectedIndex].value;
-			}
-			
-			function toggleTOC()
-			{
-				var contents = document.getElementById('contents');
-				var tocContainer = document.getElementById('tocContainer');
-				
-				if (this.getAttribute('class') == 'open')
-				{
-					this.setAttribute('class', '');
-					contents.setAttribute('class', '');
-					tocContainer.setAttribute('class', '');
-					
-					window.name = "hideTOC";
-				}
-				else
-				{
-					this.setAttribute('class', 'open');
-					contents.setAttribute('class', 'isShowingTOC');
-					tocContainer.setAttribute('class', 'isShowingTOC');
-					
-					window.name = "";
-				}
-				return false;
-			}
-			
-			function toggleTOCEntryChildren(e)
-			{
-				e.stopPropagation();
-				var currentClass = this.getAttribute('class');
-				if (currentClass == 'children') {
-					this.setAttribute('class', 'children open');
-				}
-				else if (currentClass == 'children open') {
-					this.setAttribute('class', 'children');
-				}
-				return false;
-			}
-			
-			function tocEntryClick(e)
-			{
-				e.stopPropagation();
-				return true;
-			}
-			
-			function init()
-			{
-				var selectElement = document.getElementById('jumpTo');
-				selectElement.addEventListener('change', jumpToChange, false);
-				
-				var tocButton = document.getElementById('table_of_contents');
-				tocButton.addEventListener('click', toggleTOC, false);
-				
-				var taskTreeItem = document.getElementById('task_treeitem');
-				if (taskTreeItem.getElementsByTagName('li').length > 0)
-				{
-					taskTreeItem.setAttribute('class', 'children');
-					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
-				}
-				
-				var tocList = document.getElementById('toc');
-				
-				var tocEntries = tocList.getElementsByTagName('li');
-				for (var i = 0; i < tocEntries.length; i++) {
-					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
-				}
-				
-				var tocLinks = tocList.getElementsByTagName('a');
-				for (var i = 0; i < tocLinks.length; i++) {
-					tocLinks[i].addEventListener('click', tocEntryClick, false);
-				}
-				
-				if (window.name == "hideTOC") {
-					toggleTOC.call(tocButton);
-				}
-			}
-			
-			window.onload = init;
-			
-			// If showing in Xcode, hide the TOC and Header
-			if (navigator.userAgent.match(/xcode/i)) {
-				document.getElementById("contents").className = "hideInXcode"
-				document.getElementById("tocContainer").className = "hideInXcode"
-				document.getElementById("top_header").className = "hideInXcode"
-			}
-			
-		</script>
-	</body>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
 </html>
